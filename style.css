@@ -1,0 +1,111 @@
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#chatbox {
+  border: 1px solid #ccc;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #e2f0cb;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #d9e7ff;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #777;
+  margin-left: 10px;
+}
+
+#inputArea {
+  display: flex;
+  align-items: center;
+}
+
+#inputArea input[type="text"], #inputArea button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#inputArea input[type="text"] {
+  flex: 1;
+}
+
+#inputArea button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+#inputArea button:hover {
+  background-color: #45a049;
+}
+
+#inputArea button[disabled] {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+
+/* Küçük cihazlar (telefonlar, 576px ve daha az) */
+@media only screen and (max-width: 576px) { 
+  #inputArea{
+    display: contents;
+  }
+
+  #inputArea input[type="text"] {
+    outline: none;
+    width: 269px;
+  }
+  .video{
+    height: 162px !important;
+    width: 309px !important;
+  }
+}
+
+/* Orta boyutlu cihazlar (tabletler, 768px ve daha az) */
+@media only screen and (max-width: 768px) {
+  /* CSS kuralları buraya */
+}
+
+/* Büyük ekranlar (desktop, 992px ve daha az) */
+@media only screen and (min-width: 992px) {
+  /* CSS kuralları buraya */
+}
+
+/* Çok büyük ekranlar (desktop, 1200px ve daha az) */
+@media only screen and (min-width: 1200px) {
+  /* CSS kuralları buraya */
+}
